@@ -13,7 +13,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: 'https://avion-shop.netlify.app/',
+    origin: 'https://avion-shop.netlify.app',
   })
 );
 app.use(express.json({ extended: true }));
