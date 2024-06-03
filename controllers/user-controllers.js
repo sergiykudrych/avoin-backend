@@ -42,7 +42,7 @@ class UserControllers {
     try {
       const activateLink = req.params.link;
       await userService.activate(activateLink);
-      res.redirect('https://avion-shop.netlify.app/');
+      res.redirect('https://avion-shop.netlify.app');
     } catch (e) {
       next(e);
     }
