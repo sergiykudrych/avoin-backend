@@ -14,7 +14,8 @@ router.post('/logout', UserControllers.logout);
 
 router.get('/activate/:link', UserControllers.activate);
 
-router.get('/refresh', UserControllers.refresh);
+// router.get('/refresh', UserControllers.refresh);
+router.post('/refresh', UserControllers.refresh);
 
 router.get('/users', authMiddleware, UserControllers.getUsers);
 router.post('/update-user-info', UserControllers.updateUserInfo);
