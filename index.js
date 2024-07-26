@@ -14,7 +14,7 @@ app.use(
   cors({
     credentials: true,
     
-    origin: "*",
+    origin: "https://avion-alpha.vercel.app",
   })
 );
 app.use(express.json({ extended: true }));
